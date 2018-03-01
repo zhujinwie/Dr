@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">追波</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="view_model_with_info">"大图带缩略信息"</string>
+    <string name="view_model_no_info">"仅图片"</string>
+
+</resources>

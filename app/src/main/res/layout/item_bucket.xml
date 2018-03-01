@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/item_shotlist"
+    android:layout_margin="3dp"
+    android:layout_gravity="center"
+    android:foreground="?attr/selectableItemBackground"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/image_bucket_iv"
+                android:src="@drawable/bucket_96px"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|left"
+                android:id="@+id/shotcount_item_tv"
+                android:drawableLeft="@drawable/pic15"
+                android:text="1234"
+                android:layout_marginLeft="5dp"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                />
+
+        </FrameLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/title_bucket_tv"
+            android:text="！Collecting superb brand marks from the"
+            android:gravity="start"
+            android:textSize="15sp"
+            android:maxLines="3"
+            android:ellipsize="end"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/create_time_bucket_tv"
+            android:text="创建于 2018.01.01"
+            android:layout_margin="5dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+
+            />
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

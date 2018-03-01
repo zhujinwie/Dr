@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/top_account_rl"
+    android:fitsSystemWindows="true"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:id="@+id/background_account_iv"
+        android:src="@drawable/bg_3"
+        android:scaleType="centerCrop"
+        app:layout_collapseMode="parallax"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/relativeLayout">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_3"
+            android:layout_marginTop="120dp"
+            android:id="@+id/avatar_account_iv"
+            />
+
+        <TextView
+
+            android:id="@+id/name_account_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="煮津威"
+            android:textColor="@color/text_black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_below="@id/avatar_account_iv"
+            />
+
+        <Button
+            android:id="@+id/follow_account_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:background="@drawable/shape_corner_small_pink"
+            android:drawablePadding="8dp"
+            android:text="关注"
+            android:textColor="@color/text_white"
+            android:textSize="16sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_alignBottom="@+id/avatar_account_iv"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:id="@+id/follow_account_ll"
+            android:layout_below="@+id/name_account_tv"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/follower_account_tv"
+                android:text="120"
+                android:textSize="15sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="关注"
+                android:textSize="15sp"
+                android:layout_marginLeft="8dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/following_account_tv"
+                android:text="400"
+                android:textSize="15sp"
+                android:layout_marginLeft="12dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="粉丝"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/bio_account_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/follow_account_ll"
+            android:text="firstGenji firstGenji firstGenji firstGenji firstGenji firstGenjifirstGenji "
+            android:textSize="15sp"
+            />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

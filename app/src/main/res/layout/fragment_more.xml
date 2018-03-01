@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/divider"
+    >
+
+    <android.support.v7.widget.SwitchCompat
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="使用非Wi-Fi网络时不加载GIF"
+        android:textSize="16sp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="@color/text_black"
+        android:background="@color/white"
+        android:id="@+id/wifiswitch_sc"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+
+        android:id="@+id/clear_rl"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="清除缓存"
+            android:textSize="16sp"
+            android:textColor="@color/text_black"
+            android:id="@+id/clearcache_tv"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="148.0MB"
+            android:textSize="16sp"
+            android:textColor="@color/text_black"
+            android:layout_alignParentRight="true"
+            android:id="@+id/cache_tv"
+            />
+
+    </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:id="@+id/page_size_tv"
+            android:text="每次加载图片数"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:background="@color/white"/>
+  <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="40dp"
+      android:background="@color/white"
+      android:paddingTop="5dp"
+      android:paddingBottom="5dp"
+      android:paddingLeft="15dp"
+      android:paddingRight="15dp"
+
+      >
+
+      <View
+          android:layout_width="60dp"
+          android:layout_height="match_parent"
+          android:id="@+id/block_view"
+          android:background="@drawable/shape_conor_pink_btn"
+          />
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="horizontal"
+          android:id="@+id/ll_btn"
+          >
+
+          <Button
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:id="@+id/low_size_btn"
+              android:text="10"
+              android:layout_gravity="center_vertical"
+              android:background="@null"
+              android:textColor="@color/grey"
+
+              />
+
+          <Button
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:id="@+id/low_middle_size_btn"
+              android:text="20"
+              android:layout_gravity="center_horizontal"
+              android:background="@null"
+              android:textColor="@color/grey"
+              />
+          <Button
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:id="@+id/high_middle_size_btn"
+              android:text="30"
+              android:background="@null"
+              android:textColor="@color/grey"
+              />
+
+          <Button
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:id="@+id/high_size_btn"
+              android:text="50"
+              android:background="@null"
+              android:textColor="@color/grey"
+              />
+
+      </LinearLayout>
+  </FrameLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:id="@+id/layout_rl"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="界面布局"
+            android:textSize="16sp"
+            android:textColor="@color/text_black"
+
+            />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/login_tv"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:text="退出我的账号"
+        android:textSize="16sp"
+        android:textColor="@color/colorAccent"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+
+        />
+</LinearLayout>

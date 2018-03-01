@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:foreground="?attr/selectableItemBackground"
+    android:stateListAnimator="@drawable/sel_life_on_tounch">
+
+    <com.zjw.dr.widget.DrImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:ratio_w_h="1.33"
+        android:id="@+id/shot_driv"
+
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gif_iv"
+        android:background="@mipmap/ic_gif_small"
+        android:layout_gravity="top|right"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="3dp"
+        />
+
+
+</android.support.v7.widget.CardView>
